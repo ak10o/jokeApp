@@ -14,8 +14,8 @@ public class JokeServiceImpl implements JokeService{
 	 * If it was created inside a method then for every request we would create a object of
 	 * ChuckNorris.
 	 */
-	public JokeServiceImpl() {
-		this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+	public JokeServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+		this.chuckNorrisQuotes = chuckNorrisQuotes;
 	}
 
 	@Override
